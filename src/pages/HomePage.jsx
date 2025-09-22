@@ -91,7 +91,7 @@ const HomePage = () => {
     <div className="homepage-container">
       {/* Hero Section */}
       <section className="hero-section">
-        <h1>Welcome to Edunexa</h1>
+        <h1>Welcome to EduNexa</h1>
         <p>Your one-stop platform to explore, learn, and grow with top-notch courses.</p>
         <button className="cta-button">Explore Courses</button>
       </section>
