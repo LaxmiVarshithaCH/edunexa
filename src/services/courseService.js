@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_URL = 'http://localhost:8080/courses';
+const API_URL = 'http://ec2-56-228-23-27.eu-north-1.compute.amazonaws.com:8080/courses';
 
 export const getCourseById = async (id) => {
   const res = await axios.get(`${API_URL}/${id}`);
