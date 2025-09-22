@@ -3,8 +3,6 @@ name: EduNexa Deployment
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 
 permissions:
   contents: write
@@ -20,24 +18,12 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 18
 
-      - name: Install CI
+      - name: Install dependencies
         run: npm ci
 
-      - name: Build the Project
-        run: npm run build
-      
-      #Configure Git Identity
-      - name: Configure Git
-        run: |
-          git config --global user.name laxmivarshithach
-          git config --global user.email laxmivarshithach@gmail.com
-      
-      # Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
+      - name: Build and Deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
-          npm run deploy
+        run: npm run deploy
