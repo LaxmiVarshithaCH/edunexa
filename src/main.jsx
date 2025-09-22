@@ -9,9 +9,9 @@ import "./styles/App.css";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
-<BrowserRouter>
-      <App />
-    </BrowserRouter>
+      <BrowserRouter basename="/edunexa">
+        <App />
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>
 );
