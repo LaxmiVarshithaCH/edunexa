@@ -20,17 +20,22 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: 22.17.0
 
       - name: Install CI
         run: npm ci
 
+      - name: Build the Project
+        run: npm run build
+      
+      #Configure Git Identity
       - name: Configure Git
         run: |
           git config --global user.name LaxmiVarshithaCH
           git config --global user.email laxmivarshithach@gmail.com
-
-      - name: Build & Deploy
+      
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
