@@ -2,13 +2,12 @@
 import { apiClient } from './apiClient';
 
 export const login = async (credentials) => {
-  // credentials: { email, password }
-  const response = await apiClient.post('/login', credentials);
+  const response = await apiClient.post('/auth/login', credentials);
   return response.data;
 };
 
 export const signup = async (user) => {
-  // user: { username, email, password }
-  const response = await apiClient.post('/signup', user);
+  const response = await apiClient.post('/auth/signup', user);
   return response.data;
 };
+
