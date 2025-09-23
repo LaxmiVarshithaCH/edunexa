@@ -1,9 +1,7 @@
-import axios from 'axios';
-
-const API_URL = 'http://ec2-56-228-23-27.eu-north-1.compute.amazonaws.com:8081/courses';
+import { apiClient } from './apiClient';
 
 export const getCourseById = async (id) => {
-  const res = await axios.get(`${API_URL}/${id}`);
-  console.log('Course data:', res.data); // <--- add this
+  const res = await apiClient.get(`/courses/${id}`);
+  console.log('Course data:', res.data);
   return res.data;
 };
