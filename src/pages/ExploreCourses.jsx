@@ -104,18 +104,18 @@ import { navigate } from '../redux/navSlice';
 import '../styles/Courses.css';
 
 const dummyCourses = [
-  { id: 1, title: 'React Basics', description: 'Learn React from scratch.', thumbnail: '/courses/react.jpeg' },
-  { id: 2, title: 'Advanced JS', description: 'Deep dive into JavaScript.', thumbnail: '/courses/js.jpeg' },
-  { id: 3, title: 'Python for AI', description: 'Get started with AI in Python.', thumbnail: '/courses/python.jpeg' },
-  { id: 4, title: 'Data Structures', description: 'Master data structures for coding interviews.', thumbnail: '/courses/ds.png' },
-  { id: 5, title: 'Algorithms', description: 'Learn algorithms with examples.', thumbnail: '/courses/algo.jpeg' },
-  { id: 6, title: 'Machine Learning', description: 'Introduction to ML concepts.', thumbnail: '/courses/ml.png' },
-  { id: 7, title: 'Deep Learning', description: 'Build neural networks using Python.', thumbnail: '/courses/dl.jpeg' },
-  { id: 8, title: 'Web Development', description: 'Full-stack web development course.', thumbnail: '/courses/webdev.png' },
-  { id: 9, title: 'Java Programming', description: 'Learn Java from scratch.', thumbnail: '/courses/java.png' },
-  { id: 10, title: 'C++ Basics', description: 'Introduction to C++ programming.', thumbnail: '/courses/cplus.jpeg' },
-  { id: 11, title: 'SQL & Databases', description: 'Learn SQL and relational databases.', thumbnail: '/courses/sql.png' },
-  { id: 12, title: 'AI for Beginners', description: 'Introduction to Artificial Intelligence.', thumbnail: '/courses/ai.jpeg' },
+  { id: 1, title: 'React Basics', description: 'Learn React from scratch.', thumbnail: '/edunexa/courses/react.jpeg' },
+  { id: 2, title: 'Advanced JS', description: 'Deep dive into JavaScript.', thumbnail: '/edunexa/courses/js.jpeg' },
+  { id: 3, title: 'Python for AI', description: 'Get started with AI in Python.', thumbnail: '/edunexa/courses/python.jpeg' },
+  { id: 4, title: 'Data Structures', description: 'Master data structures for coding interviews.', thumbnail: '/edunexa/courses/ds.png' },
+  { id: 5, title: 'Algorithms', description: 'Learn algorithms with examples.', thumbnail: '/edunexa/courses/algo.jpeg' },
+  { id: 6, title: 'Machine Learning', description: 'Introduction to ML concepts.', thumbnail: '/edunexa/courses/ml.png' },
+  { id: 7, title: 'Deep Learning', description: 'Build neural networks using Python.', thumbnail: '/edunexa/courses/dl.jpeg' },
+  { id: 8, title: 'Web Development', description: 'Full-stack web development course.', thumbnail: '/edunexa/courses/webdev.png' },
+  { id: 9, title: 'Java Programming', description: 'Learn Java from scratch.', thumbnail: '/edunexa/courses/java.png' },
+  { id: 10, title: 'C++ Basics', description: 'Introduction to C++ programming.', thumbnail: '/edunexa/courses/cplus.jpeg' },
+  { id: 11, title: 'SQL & Databases', description: 'Learn SQL and relational databases.', thumbnail: '/edunexa/courses/sql.png' },
+  { id: 12, title: 'AI for Beginners', description: 'Introduction to Artificial Intelligence.', thumbnail: '/edunexa/courses/ai.jpeg' },
 ];
 
 const ExploreCourses = () => {
